@@ -3,14 +3,13 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CoursesModule } from './courses/courses.module';
-// Cambia la siguiente línea
 import { StudentModule } from './students/students.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Student } from './students/entities/student.entity';
 import { Course } from './courses/entities/course.entity';
 
 @Module({
-  imports: [CoursesModule, StudentModule, // Asegúrate de que el nombre sea correcto
+  imports: [CoursesModule, StudentModule, 
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
