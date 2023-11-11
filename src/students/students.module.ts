@@ -8,7 +8,7 @@ import { StudentCourse } from 'src/courses/entities/student-course.entity';
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature([Student, StudentCourse]), // Asegúrate de incluir StudentCourse aquí
+    TypeOrmModule.forFeature([Student, StudentCourse]), 
   ],
   providers: [StudentService],
   controllers: [StudentsController],
