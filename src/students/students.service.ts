@@ -19,7 +19,7 @@ export class StudentService {
     if(!student){
     throw new NotFoundException()
     }
-    /* You can check if course with given ID exists aswell here in the same way with CourseRepository */
+    
     
     await this.studentCourseRepository.save(createStudentCourse)
     
